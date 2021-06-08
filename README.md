@@ -8,6 +8,7 @@ Clone the repository and run `npm install`
 
 ```
 git clone https://github.com/ofeer/BIGVU.git
+cd BIGVU
 npm install
 ```
 
