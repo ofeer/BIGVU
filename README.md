@@ -13,7 +13,7 @@ Starter project for creating a MVC express server, using
 Clone the repository and run `npm install`
 
 ```
-git clone https://github.com/tomyitav/express-es6-starter.git
+git clone https://github.com/ofeer/BIGVU.git
 npm install
 ```
 
