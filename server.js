@@ -21,6 +21,7 @@ app.listen(port);
 
 var url;
 
+// settings for video
 var videoOptions = {
     fps: 25,
     loop: 10, // seconds
@@ -48,7 +49,7 @@ app.post('/', async (req, res) =>  {
 
     // validate url
     if (!isWebUri(url))
-        res.send("The url is unvalid, pls check your self and try again")
+        res.send("The url is unvalid, please check your self and try again")
     
    else {  
         // taking screen shot
@@ -77,7 +78,7 @@ app.post('/', async (req, res) =>  {
 
 const deleteFile = (file) => {
     fs.unlink(file, (err) => {
-       // error handeling
+       // error handeling 
     });
 }
 
