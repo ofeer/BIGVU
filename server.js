@@ -7,6 +7,8 @@ import { isWebUri } from 'valid-url';
 import ffmpegPath  from '@ffmpeg-installer/ffmpeg';
 import ffmpeg  from 'fluent-ffmpeg';
 
+
+
 ffmpeg.setFfmpegPath(ffmpegPath.path);
 
 const port = 3000;
@@ -38,6 +40,9 @@ app.post('/', async (req, res) =>  {
     // get Json input
     url = req.body.url;
 
+
+    const dirname = (process.cwd() + "\\video.mp4");
+    console.log(dirname);
     // delete files if exists
     deleteFile('screenshot.png')
     deleteFile('video.mp4')
@@ -65,7 +70,7 @@ app.post('/', async (req, res) =>  {
         })
 
         // send response
-        res.send({file : "C:/Users/ofeer/Desktop/BIGVU/express-es6-starter/video.mp4"});
+        res.send({file : dirname});
     }
 })
 
