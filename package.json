@@ -2,6 +2,7 @@
   "name": "express-es6-starter",
   "version": "0.1.0",
   "description": "Seed project for easily getting started with express for es6",
+  "type": "module",
   "scripts": {
     "start": "nodemon ./server.js --exec babel-node",
     "build": "babel . -d dist --presets es2015,stage-2 --ignore spec.js,node_modules",
@@ -21,20 +22,34 @@
   ],
   "author": "Tom Yitav <tomyitav@gmail.com>",
   "dependencies": {
+    "@babel/runtime": "^7.14.0",
+    "@ffmpeg-installer/ffmpeg": "^1.0.20",
     "body-parser": "^1.15.2",
+    "capture-website": "^2.0.1",
     "cors": "^2.8.0",
-    "express": "4.14.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "ffmpeg": "0.0.4",
+    "ffprobe": "^1.1.2",
+    "fluent-ffmpeg": "^2.1.2",
     "lodash": "^4.15.0",
     "mongoose": "^4.8.6",
     "morgan": "^1.8.2",
+    "url-to-screenshot": "^3.0.0",
+    "valid-url": "^1.0.9",
+    "videoshow": "^0.1.12",
     "winston": "^2.3.1",
     "winston-daily-rotate-file": "^1.4.6"
   },
   "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/node": "^7.14.2",
+    "@babel/plugin-transform-runtime": "^7.14.3",
     "babel-cli": "6.16.0",
     "babel-core": "^6.17.0",
     "babel-eslint": "^7.0.0",
-    "babel-plugin-inline-import": "^2.0.1",
+    "babel-install": "2.1.0",
+    "babel-plugin-inline-import": "^2.0.6",
     "babel-plugin-transform-async-to-module-method": "^6.24.1",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-polyfill": "^6.16.0",
@@ -45,7 +60,7 @@
     "eslint-config-airbnb": "^12.0.0",
     "eslint-plugin-import": "^2.0.1",
     "eslint-plugin-react": "^6.4.1",
-    "nodemon": "^1.9.1"
+    "nodemon": "^1.19.4"
   },
   "eslintConfig": {
     "parser": "babel-eslint",
